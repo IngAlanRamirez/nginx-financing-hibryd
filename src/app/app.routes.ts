@@ -3,17 +3,23 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'auth',
-    loadComponent: () => import('./auth/auth.page').then((m) => m.AuthPage),
+    loadComponent: () =>
+      import('./pages/auth/auth.page').then((m) => m.AuthPage),
   },
   {
-    path: 'purchases',
+    path: 'pages/purchases',
     loadComponent: () =>
-      import('./purchases/purchases.page').then((m) => m.PurchasesPage),
+      import('./pages/purchases/purchases.page').then((m) => m.PurchasesPage),
   },
   {
-    path: 'simulator',
+    path: 'pages/simulator',
     loadComponent: () =>
-      import('./simulator/simulator.page').then((m) => m.SimulatorPage),
+      import('./pages/simulator/simulator.page').then((m) => m.SimulatorPage),
+  },
+  {
+    path: 'pages/error',
+    loadComponent: () =>
+      import('./pages/error/error.page').then((m) => m.ErrorPage),
   },
   {
     path: '**',
