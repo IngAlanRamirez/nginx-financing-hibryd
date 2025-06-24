@@ -1,0 +1,7 @@
+{
+  "name": "nginx-financing-hibryd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
