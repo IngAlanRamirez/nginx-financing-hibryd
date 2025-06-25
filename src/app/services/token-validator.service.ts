@@ -17,6 +17,6 @@ export class TokenValidatorService {
       Authorization: tkn,
     });
     const url: string = environment.session;
-    return this.http.get<TokenValidator>(url, { headers });
+    return this.http.post<TokenValidator>(url, { headers });
   }
 }

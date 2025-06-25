@@ -10,8 +10,8 @@ import { TokenValidatorService } from './token-validator.service';
 export class TokenSsoFacadeService {
   private activatedRoute = inject(ActivatedRoute);
   private router = inject(Router);
-  private _token!: string;
   private tokenValidatorService = inject(TokenValidatorService);
+  _token!: string;
 
   constructor() {}
 
